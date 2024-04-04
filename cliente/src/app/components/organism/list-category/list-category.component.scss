@@ -1,0 +1,50 @@
+.category-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  position: absolute;
+  right: 0;
+  display: flex;
+  column-gap: 20px;
+}
+
+.button {
+  background-color: #183bf4;
+  padding: 10px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button2 {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  padding: 10px;
+  color: #183bf4;
+  border: 1.5px solid #183bf4;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button2Active {
+  background-color: #183bf4;
+  border: 1.5px solid white;
+  color: white;
+}

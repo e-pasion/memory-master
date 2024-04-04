@@ -1,0 +1,22 @@
+<main>
+  <div class="header">
+    <h1>Categorías</h1>
+    <div class="buttons">
+      <div class="button">Crear Categoría</div>
+      <div
+        class="button2"
+        [class.button2Active]="deleteActive"
+        (click)="handleDelete()"
+      >
+        <i class="fa-solid fa-trash"></i>
+      </div>
+    </div>
+  </div>
+  <div class="category-container">
+    <app-category
+      [title]="category"
+      [deleteActive]="deleteActive"
+      *ngFor="let category of categories"
+    ></app-category>
+  </div>
+</main>

@@ -1,0 +1,80 @@
+.main {
+  width: 200px;
+}
+.folder {
+  cursor: pointer;
+  margin-top: 70px;
+  background: -webkit-linear-gradient(to top, #00c2ff, #183bf4);
+  background: linear-gradient(to top, #00c2ff, #183bf4);
+  border-radius: 0 15px 15px 15px;
+  width: 200px;
+  height: 120px;
+  position: relative;
+  color: white;
+  font-weight: 800;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decoration {
+  position: absolute;
+  background-color: #183bf4;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  height: 20px;
+  width: 100px;
+  top: -20px;
+  left: 0;
+  border-radius: 15px 0 0 0;
+}
+
+.paper {
+  position: absolute;
+  //   width: 170px;
+  //   height: 14px;
+
+  top: 10px;
+  z-index: 10;
+  //   background-color: white;
+  //   border-radius: 10px 10px 0 0;
+  //   transition: 0.3s;
+}
+
+.papertopborder {
+  position: absolute;
+  background-color: white;
+  width: 170px;
+  height: 14px;
+  top: -14px;
+  border-top: 1.2px solid #183bf4;
+  border-left: 1.5px solid #183bf4;
+  border-right: 1.5px solid #183bf4;
+}
+
+.paperbody {
+  position: relative;
+  background-color: white;
+  width: 170px;
+  height: 14px;
+  transform: scaleY(1);
+  transform-origin: bottom;
+  border-radius: 3px 3px 0 0;
+  border-top: 1.2px solid #183bf4;
+  border-left: 1.5px solid #183bf4;
+  border-right: 1.5px solid #183bf4;
+}
+
+.check {
+  opacity: 0.8;
+  cursor: pointer;
+  position: absolute;
+  transform: scale(1.5);
+  bottom: -1px;
+  right: -1px;
+}
+
+.folder:hover .paperbody {
+  transform: scaleY(2.3);
+  transition: 0.3s;
+}
